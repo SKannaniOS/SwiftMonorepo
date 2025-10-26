@@ -20,7 +20,8 @@ let package = Package(
     dependencies: [
         // 🚨 Development ONLY: Local path dependency on CoreSDK
         // Must be replaced with: .package(url: "...", from: "1.0.0") for production/publishing
-        .package(path: "../MonoRepoCore")
+//        .package(path: "../MonoRepoCore")
+        .package(url: "https://github.com/SKannaniOS/MonoRepoCore.git", from: "1.0.0")
     ],
     targets: [
         .target(name: "MonoRepoNetworking",
